@@ -10,6 +10,11 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
+    let destinations =
+        [
+            [],
+            [],
+            []]
     override func viewDidLoad() {
         super.viewDidLoad()
 

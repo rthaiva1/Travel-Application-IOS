@@ -9,10 +9,8 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-
-    
     @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var image: UIImageView!
+    @IBOutlet var pic: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -27,7 +25,12 @@ class TableViewCell: UITableViewCell {
     
     func Init()
     {
-
+        label!.text = ""
     }
     
+    func set(imagename: String,name: String)
+    {
+        pic.image = UIImage(named: imagename)
+        label!.text = name
+    }
 }

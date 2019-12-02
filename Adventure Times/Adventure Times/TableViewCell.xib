@@ -39,8 +39,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="image" destination="d6Z-gG-ePY" id="nid-K9-9xP"/>
                 <outlet property="label" destination="CV5-yz-LkG" id="oet-WY-yNm"/>
+                <outlet property="pic" destination="d6Z-gG-ePY" id="Sdq-mf-gwA"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="122.20982142857142"/>
         </tableViewCell>
