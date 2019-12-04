@@ -12,9 +12,14 @@ class TableViewController: UITableViewController {
 
     let destinations =
         [
-            [],
-            [],
-            []]
+            ["1","Great Pyramid of Giza"],
+            ["2","Great Wall of China"],
+            ["3","Petra - Jordan"],
+            ["4","Christ the Redeemer - Brazil"],
+            ["5","Machu Picchu - Peru"],
+            ["6","Chichen Itza - Mexico"],
+            ["7","Colosseum - Italy"],
+            ["8","Taj Mahal - India"]]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,15 +41,16 @@ class TableViewController: UITableViewController {
         return 0
     }
 
-    /*
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! TableViewCell
+        let image = destinations[indexPath.row][0]
+        let description = destinations[indexPath.row][1]
         // Configure the cell...
-
+        cell.backgroundView = UIImageView.init(image: UIImage.init(named: "images"))
+        cell.set(imagename: image,name: description)
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
