@@ -34,7 +34,7 @@
         <!--Table View Controller-->
         <scene sceneID="JB1-9c-dMD">
             <objects>
-                <tableViewController id="YIS-Ni-6s7" sceneMemberID="viewController">
+                <tableViewController id="YIS-Ni-6s7" customClass="TableViewController" customModule="Adventure_Times" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aTd-3G-RAs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,6 +59,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMw-nX-5wY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1010" y="118"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9BO-8k-tKN">
+            <objects>
+                <viewController id="Dyv-Ej-lQm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eBn-h9-jqk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PHb-p5-y0y">
+                                <rect key="frame" x="20" y="58" width="374" height="223"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PHb-p5-y0y" firstAttribute="leading" secondItem="wm4-As-RZY" secondAttribute="leading" constant="20" id="Dfb-5L-vMN"/>
+                            <constraint firstItem="PHb-p5-y0y" firstAttribute="top" secondItem="wm4-As-RZY" secondAttribute="top" constant="14" id="TIG-mh-1d9"/>
+                            <constraint firstItem="wm4-As-RZY" firstAttribute="trailing" secondItem="PHb-p5-y0y" secondAttribute="trailing" constant="20" id="fgQ-VI-plJ"/>
+                            <constraint firstItem="wm4-As-RZY" firstAttribute="bottom" secondItem="PHb-p5-y0y" secondAttribute="bottom" constant="581" id="xJy-tH-nbA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wm4-As-RZY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VCP-k9-KcQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1787" y="118"/>
         </scene>
     </scenes>
     <resources>
