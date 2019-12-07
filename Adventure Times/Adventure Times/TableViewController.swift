@@ -22,7 +22,7 @@ class TableViewController: UITableViewController {
             ["8","Taj Mahal - India"]]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "destinationcell")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -38,16 +38,15 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return destinations.count
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! TableViewCell
-        let image = destinations[indexPath.row][0]
-        let description = destinations[indexPath.row][1]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "destinationcell", for: indexPath) as! TableViewCell
+        let image = destinations[indexPath.row][0] as! String
+        let description = destinations[indexPath.row][1] as! String
         // Configure the cell...
-        cell.backgroundView = UIImageView.init(image: UIImage.init(named: "images"))
         cell.set(imagename: image,name: description)
         return cell
     }

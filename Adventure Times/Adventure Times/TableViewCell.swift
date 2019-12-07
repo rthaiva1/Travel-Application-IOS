@@ -7,30 +7,43 @@
 //
 
 import UIKit
-
+protocol YourCellDelegate{
+    func didPressButton(Owner: String,Status: String,Price : Int,cell : TableViewCell)
+}
 class TableViewCell: UITableViewCell {
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet var pic: UIImageView!
+
+    @IBOutlet var dpic: UIImageView!
+    @IBOutlet weak var dlab: UILabel!
+    var cellDelegate: YourCellDelegate?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         Init()
     }
 
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        // Initialization code
+        Init()
+    }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        Init()
+
         // Configure the view for the selected state
     }
     
     func Init()
     {
-        label!.text = ""
+        dlab!.text = ""
     }
     
     func set(imagename: String,name: String)
     {
-        pic.image = UIImage(named: imagename)
-        label!.text = name
+        dpic.image = UIImage(named: imagename)
+        dlab!.text = name
+    }
+    @IBAction func newtransaction(_ sender: Any)
+    {
+//        cellDelegate?.didPressButton(Owner: ownertext!.text!,Status: salelabel!.text!,Price : Int(pricelabel!.text!)!,cell : self)
     }
 }
