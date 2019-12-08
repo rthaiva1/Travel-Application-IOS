@@ -11,6 +11,17 @@ import UIKit
 class Description: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
     @IBOutlet weak var viewCollection: UICollectionView!
     
+    let img =
+    [
+    ["1a","1b","1c","1d"],
+    ["2a","2b","2c","2d"],
+    ["3a","3b","3c","3d"],
+    ["4a","4b","4c","4d"],
+    ["5a","5b","5c","5d"],
+    ["6a","6b","6c","6d"],
+    ["7a","7b","7c","7d"],
+    ["8a","8b","8c","8d"],
+    ]
     let desc =
         ["The Great Pyramid of Giza is the oldest and largest of the three pyramids in the Giza pyramid complex bordering present-day Giza in Greater Cairo, Egypt. It is the oldest of the Seven Wonders of the Ancient World, and the only one to remain largely intact.",
          "The Great Wall of China is the collective name of a series of fortification systems generally built across the historical northern borders of China to protect and consolidate territories of Chinese states and empires against various nomadic groups of the steppe and their polities.",
@@ -39,13 +50,12 @@ class Description: UIViewController,UICollectionViewDelegate,UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 4
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectcell", for: indexPath)
-        cell.backgroundView = UIImageView.init(image: UIImage.init(named: y))
-        // Configure the cell...
+        cell.backgroundView = UIImageView.init(image: UIImage.init(named: img[Int(y)! - 1][indexPath.row]))
         return cell
     }
     
