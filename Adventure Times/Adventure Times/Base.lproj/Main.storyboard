@@ -106,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="1010" y="118"/>
         </scene>
-        <!--View Controller-->
+        <!--Description-->
         <scene sceneID="9BO-8k-tKN">
             <objects>
-                <viewController id="Dyv-Ej-lQm" sceneMemberID="viewController">
+                <viewController id="Dyv-Ej-lQm" customClass="Description" customModule="Adventure_Times" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eBn-h9-jqk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,6 +138,9 @@
                         <viewLayoutGuide key="safeArea" id="wm4-As-RZY"/>
                     </view>
                     <navigationItem key="navigationItem" id="1ej-x8-RZQ"/>
+                    <connections>
+                        <outlet property="labeld" destination="XRl-B2-wkG" id="Vfl-OG-C8f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VCP-k9-KcQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

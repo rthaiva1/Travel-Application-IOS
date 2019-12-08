@@ -20,6 +20,8 @@ class TableViewController: UITableViewController {
             ["6","Chichen Itza - Mexico"],
             ["7","Colosseum - Italy"],
             ["8","Taj Mahal - India"]]
+    
+    var t: String!
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "destinationcell")
@@ -53,6 +55,7 @@ class TableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        t = destinations[indexPath.row][0] 
         self.performSegue(withIdentifier: "showdetails", sender: self)
     }
     /*
@@ -91,6 +94,10 @@ class TableViewController: UITableViewController {
     */
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? Description
+        {
+            destination.y = t
+        }
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }

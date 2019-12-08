@@ -15,6 +15,7 @@
 		1415743D238F7A9900EC9456 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1415743B238F7A9900EC9456 /* LaunchScreen.storyboard */; };
 		14157448238F7A9900EC9456 /* Adventure_TimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14157447238F7A9900EC9456 /* Adventure_TimesTests.swift */; };
 		14157453238F7A9900EC9456 /* Adventure_TimesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14157452238F7A9900EC9456 /* Adventure_TimesUITests.swift */; };
+		1442F864239C9A44009AFCA1 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1442F863239C9A44009AFCA1 /* Description.swift */; };
 		144BAB3023937116006E9337 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BAB2F23937116006E9337 /* TableViewController.swift */; };
 		144BAB3323937197006E9337 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BAB3123937197006E9337 /* TableViewCell.swift */; };
 		144BAB3423937197006E9337 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144BAB3223937197006E9337 /* TableViewCell.xib */; };
@@ -52,6 +53,7 @@
 		1415744E238F7A9900EC9456 /* Adventure TimesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Adventure TimesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14157452238F7A9900EC9456 /* Adventure_TimesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adventure_TimesUITests.swift; sourceTree = "<group>"; };
 		14157454238F7A9900EC9456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1442F863239C9A44009AFCA1 /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
 		144BAB2F23937116006E9337 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		144BAB3123937197006E9337 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		144BAB3223937197006E9337 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				144BAB3123937197006E9337 /* TableViewCell.swift */,
 				144BAB3223937197006E9337 /* TableViewCell.xib */,
 				14157436238F7A9400EC9456 /* Main.storyboard */,
+				1442F863239C9A44009AFCA1 /* Description.swift */,
 				14157439238F7A9900EC9456 /* Assets.xcassets */,
 				1415743B238F7A9900EC9456 /* LaunchScreen.storyboard */,
 				1415743E238F7A9900EC9456 /* Info.plist */,
@@ -269,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1442F864239C9A44009AFCA1 /* Description.swift in Sources */,
 				144BAB3323937197006E9337 /* TableViewCell.swift in Sources */,
 				14157435238F7A9400EC9456 /* ViewController.swift in Sources */,
 				14157431238F7A9400EC9456 /* AppDelegate.swift in Sources */,
