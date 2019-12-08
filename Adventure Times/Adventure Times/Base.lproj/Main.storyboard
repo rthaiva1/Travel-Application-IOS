@@ -98,6 +98,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Roo-za-gdc"/>
+                    <connections>
+                        <segue destination="Dyv-Ej-lQm" kind="show" identifier="showdetails" id="I12-eg-YlL"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMw-nX-5wY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -108,26 +111,14 @@
             <objects>
                 <viewController id="Dyv-Ej-lQm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eBn-h9-jqk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PHb-p5-y0y">
-                                <rect key="frame" x="20" y="58" width="374" height="223"/>
+                                <rect key="frame" x="0.0" y="14" width="414" height="213"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ou9-PW-dgG">
-                                <rect key="frame" x="20" y="319" width="374" height="75"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNX-bw-NIQ">
-                                <rect key="frame" x="20" y="439" width="374" height="75"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETI-kv-oDq">
-                                <rect key="frame" x="20" y="564" width="374" height="75"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRl-B2-wkG">
+                                <rect key="frame" x="0.0" y="256" width="414" height="148"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -135,25 +126,18 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="ETI-kv-oDq" firstAttribute="top" secondItem="iNX-bw-NIQ" secondAttribute="bottom" constant="50" id="3Lb-IA-cCX"/>
-                            <constraint firstItem="wm4-As-RZY" firstAttribute="bottom" secondItem="ou9-PW-dgG" secondAttribute="bottom" constant="468" id="3Vv-oy-2Bf"/>
-                            <constraint firstItem="iNX-bw-NIQ" firstAttribute="leading" secondItem="wm4-As-RZY" secondAttribute="leading" constant="20" id="5i1-G7-5k5"/>
-                            <constraint firstItem="ETI-kv-oDq" firstAttribute="leading" secondItem="wm4-As-RZY" secondAttribute="leading" constant="20" id="8j9-aO-4CX"/>
-                            <constraint firstItem="ou9-PW-dgG" firstAttribute="leading" secondItem="wm4-As-RZY" secondAttribute="leading" constant="20" id="9qY-VY-rPn"/>
-                            <constraint firstItem="wm4-As-RZY" firstAttribute="trailing" secondItem="iNX-bw-NIQ" secondAttribute="trailing" constant="20" id="AJw-eM-5UJ"/>
-                            <constraint firstItem="PHb-p5-y0y" firstAttribute="leading" secondItem="wm4-As-RZY" secondAttribute="leading" constant="20" id="Dfb-5L-vMN"/>
+                            <constraint firstItem="wm4-As-RZY" firstAttribute="bottom" secondItem="XRl-B2-wkG" secondAttribute="bottom" constant="404" id="44q-RV-G1A"/>
+                            <constraint firstItem="XRl-B2-wkG" firstAttribute="top" secondItem="PHb-p5-y0y" secondAttribute="bottom" constant="29" id="SgV-Bl-euv"/>
                             <constraint firstItem="PHb-p5-y0y" firstAttribute="top" secondItem="wm4-As-RZY" secondAttribute="top" constant="14" id="TIG-mh-1d9"/>
-                            <constraint firstItem="wm4-As-RZY" firstAttribute="trailing" secondItem="ou9-PW-dgG" secondAttribute="trailing" constant="20" id="WlD-oc-505"/>
-                            <constraint firstItem="wm4-As-RZY" firstAttribute="trailing" secondItem="ETI-kv-oDq" secondAttribute="trailing" constant="20" id="ZQP-dN-4Lx"/>
-                            <constraint firstItem="wm4-As-RZY" firstAttribute="bottom" secondItem="ETI-kv-oDq" secondAttribute="bottom" constant="223" id="d9a-jG-K3D"/>
-                            <constraint firstItem="wm4-As-RZY" firstAttribute="trailing" secondItem="PHb-p5-y0y" secondAttribute="trailing" constant="20" id="fgQ-VI-plJ"/>
-                            <constraint firstItem="ou9-PW-dgG" firstAttribute="top" secondItem="PHb-p5-y0y" secondAttribute="bottom" constant="38" id="k0s-JQ-IVn"/>
-                            <constraint firstItem="wm4-As-RZY" firstAttribute="bottom" secondItem="iNX-bw-NIQ" secondAttribute="bottom" constant="348" id="q8X-aI-1c9"/>
-                            <constraint firstItem="iNX-bw-NIQ" firstAttribute="top" secondItem="ou9-PW-dgG" secondAttribute="bottom" constant="45" id="uTp-oC-dHv"/>
+                            <constraint firstItem="PHb-p5-y0y" firstAttribute="trailing" secondItem="wm4-As-RZY" secondAttribute="trailing" id="dQp-zg-fEB"/>
+                            <constraint firstItem="XRl-B2-wkG" firstAttribute="leading" secondItem="wm4-As-RZY" secondAttribute="leading" id="l2f-CP-A1k"/>
+                            <constraint firstItem="XRl-B2-wkG" firstAttribute="trailing" secondItem="wm4-As-RZY" secondAttribute="trailing" id="nSw-nC-Rtn"/>
+                            <constraint firstItem="PHb-p5-y0y" firstAttribute="leading" secondItem="wm4-As-RZY" secondAttribute="leading" id="tBk-up-3Jh"/>
                             <constraint firstItem="wm4-As-RZY" firstAttribute="bottom" secondItem="PHb-p5-y0y" secondAttribute="bottom" constant="581" id="xJy-tH-nbA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wm4-As-RZY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="1ej-x8-RZQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VCP-k9-KcQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

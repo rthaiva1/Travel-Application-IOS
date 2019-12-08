@@ -7,14 +7,10 @@
 //
 
 import UIKit
-protocol YourCellDelegate{
-    func didPressButton(Owner: String,Status: String,Price : Int,cell : TableViewCell)
-}
 class TableViewCell: UITableViewCell {
 
     @IBOutlet var dpic: UIImageView!
     @IBOutlet weak var dlab: UILabel!
-    var cellDelegate: YourCellDelegate?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -31,7 +27,7 @@ class TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
     func Init()
     {
         dlab!.text = ""
@@ -41,9 +37,5 @@ class TableViewCell: UITableViewCell {
     {
         dpic.image = UIImage(named: imagename)
         dlab!.text = name
-    }
-    @IBAction func newtransaction(_ sender: Any)
-    {
-//        cellDelegate?.didPressButton(Owner: ownertext!.text!,Status: salelabel!.text!,Price : Int(pricelabel!.text!)!,cell : self)
     }
 }
