@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -131,19 +132,43 @@
                                     <action selector="onclick:" destination="Dyv-Ej-lQm" eventType="touchUpInside" id="Sjr-my-ZUY"/>
                                 </connections>
                             </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WJW-ng-eEX">
+                                <rect key="frame" x="0.0" y="441" width="414" height="314"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lmx-HM-gWD">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Txt-nt-SPd">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jK2-V9-Cqw">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="wm4-As-RZY" firstAttribute="bottom" secondItem="XRl-B2-wkG" secondAttribute="bottom" constant="404" id="44q-RV-G1A"/>
                             <constraint firstItem="kEc-Yg-2Xq" firstAttribute="bottom" secondItem="wm4-As-RZY" secondAttribute="bottom" id="52r-Y8-Ex6"/>
+                            <constraint firstItem="kEc-Yg-2Xq" firstAttribute="top" secondItem="WJW-ng-eEX" secondAttribute="bottom" constant="8" id="F9n-Hs-d4s"/>
                             <constraint firstItem="kEc-Yg-2Xq" firstAttribute="top" secondItem="XRl-B2-wkG" secondAttribute="bottom" constant="359" id="QYY-TH-QF2"/>
                             <constraint firstItem="XRl-B2-wkG" firstAttribute="top" secondItem="PHb-p5-y0y" secondAttribute="bottom" constant="29" id="SgV-Bl-euv"/>
                             <constraint firstItem="PHb-p5-y0y" firstAttribute="top" secondItem="wm4-As-RZY" secondAttribute="top" constant="14" id="TIG-mh-1d9"/>
+                            <constraint firstItem="WJW-ng-eEX" firstAttribute="top" secondItem="XRl-B2-wkG" secondAttribute="bottom" constant="37" id="WSN-6G-UT0"/>
                             <constraint firstItem="PHb-p5-y0y" firstAttribute="trailing" secondItem="wm4-As-RZY" secondAttribute="trailing" id="dQp-zg-fEB"/>
+                            <constraint firstItem="WJW-ng-eEX" firstAttribute="trailing" secondItem="wm4-As-RZY" secondAttribute="trailing" id="eiS-Gw-Ipm"/>
                             <constraint firstItem="XRl-B2-wkG" firstAttribute="leading" secondItem="wm4-As-RZY" secondAttribute="leading" id="l2f-CP-A1k"/>
                             <constraint firstItem="XRl-B2-wkG" firstAttribute="trailing" secondItem="wm4-As-RZY" secondAttribute="trailing" id="nSw-nC-Rtn"/>
                             <constraint firstItem="wm4-As-RZY" firstAttribute="trailing" secondItem="kEc-Yg-2Xq" secondAttribute="trailing" constant="14" id="rJg-aT-fFI"/>
                             <constraint firstItem="PHb-p5-y0y" firstAttribute="leading" secondItem="wm4-As-RZY" secondAttribute="leading" id="tBk-up-3Jh"/>
+                            <constraint firstItem="WJW-ng-eEX" firstAttribute="leading" secondItem="wm4-As-RZY" secondAttribute="leading" id="vct-Hn-njQ"/>
                             <constraint firstItem="kEc-Yg-2Xq" firstAttribute="leading" secondItem="wm4-As-RZY" secondAttribute="leading" constant="314" id="w7R-n0-MdE"/>
                             <constraint firstItem="wm4-As-RZY" firstAttribute="bottom" secondItem="PHb-p5-y0y" secondAttribute="bottom" constant="581" id="xJy-tH-nbA"/>
                         </constraints>
