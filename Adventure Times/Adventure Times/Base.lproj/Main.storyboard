@@ -123,16 +123,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEc-Yg-2Xq">
+                                <rect key="frame" x="314" y="763" width="86" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Go Back"/>
+                                <connections>
+                                    <action selector="onclick:" destination="Dyv-Ej-lQm" eventType="touchUpInside" id="Sjr-my-ZUY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="wm4-As-RZY" firstAttribute="bottom" secondItem="XRl-B2-wkG" secondAttribute="bottom" constant="404" id="44q-RV-G1A"/>
+                            <constraint firstItem="kEc-Yg-2Xq" firstAttribute="bottom" secondItem="wm4-As-RZY" secondAttribute="bottom" id="52r-Y8-Ex6"/>
+                            <constraint firstItem="kEc-Yg-2Xq" firstAttribute="top" secondItem="XRl-B2-wkG" secondAttribute="bottom" constant="359" id="QYY-TH-QF2"/>
                             <constraint firstItem="XRl-B2-wkG" firstAttribute="top" secondItem="PHb-p5-y0y" secondAttribute="bottom" constant="29" id="SgV-Bl-euv"/>
                             <constraint firstItem="PHb-p5-y0y" firstAttribute="top" secondItem="wm4-As-RZY" secondAttribute="top" constant="14" id="TIG-mh-1d9"/>
                             <constraint firstItem="PHb-p5-y0y" firstAttribute="trailing" secondItem="wm4-As-RZY" secondAttribute="trailing" id="dQp-zg-fEB"/>
                             <constraint firstItem="XRl-B2-wkG" firstAttribute="leading" secondItem="wm4-As-RZY" secondAttribute="leading" id="l2f-CP-A1k"/>
                             <constraint firstItem="XRl-B2-wkG" firstAttribute="trailing" secondItem="wm4-As-RZY" secondAttribute="trailing" id="nSw-nC-Rtn"/>
+                            <constraint firstItem="wm4-As-RZY" firstAttribute="trailing" secondItem="kEc-Yg-2Xq" secondAttribute="trailing" constant="14" id="rJg-aT-fFI"/>
                             <constraint firstItem="PHb-p5-y0y" firstAttribute="leading" secondItem="wm4-As-RZY" secondAttribute="leading" id="tBk-up-3Jh"/>
+                            <constraint firstItem="kEc-Yg-2Xq" firstAttribute="leading" secondItem="wm4-As-RZY" secondAttribute="leading" constant="314" id="w7R-n0-MdE"/>
                             <constraint firstItem="wm4-As-RZY" firstAttribute="bottom" secondItem="PHb-p5-y0y" secondAttribute="bottom" constant="581" id="xJy-tH-nbA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wm4-As-RZY"/>
@@ -140,6 +152,8 @@
                     <navigationItem key="navigationItem" id="1ej-x8-RZQ"/>
                     <connections>
                         <outlet property="labeld" destination="XRl-B2-wkG" id="Vfl-OG-C8f"/>
+                        <outlet property="uimage" destination="PHb-p5-y0y" id="nAH-Ve-TKT"/>
+                        <segue destination="YIS-Ni-6s7" kind="showDetail" identifier="getback" id="yGc-cy-DSa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VCP-k9-KcQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -150,4 +164,7 @@
     <resources>
         <image name="life_is_meant_for_good" width="1125" height="2436"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="yGc-cy-DSa"/>
+    </inferredMetricsTieBreakers>
 </document>
